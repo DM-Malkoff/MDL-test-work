@@ -66,6 +66,12 @@ let select = function () {
 
     function selectToggle() {
         this.parentElement.classList.toggle('is-active')
+        document.addEventListener("click", (e) => {
+            const withinBoundaries = e.composedPath().includes(this)
+            if (!withinBoundaries) {
+                this.parentElement.classList.remove('is-active')
+            }
+        })
     }
 
     function selectChoose() {
