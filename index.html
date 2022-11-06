@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" class="light">
+<head>
+    <title>MDL Test work</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+</head>
+<body>
+<div class="container">
+    <header class="header">
+        <h1 class="header--title">Preferences</h1>
+        <div class="header--text">
+            <p>On this page you can configure the main system parameters available for customization</p>
+        </div>
+    </header>
+    <main class="content">
+        <form class="form">
+            <div class="form--el">
+                <div class="form--el-cont">
+                    <div class="form--label-cont">
+                        <label class="label">Company Title</label>
+                    </div>
+                    <div class="form--inp-cont">
+                        <input type="text" name="Company Title" class="inp-text" placeholder="Star and Moon"/>
+                    </div>
+                </div>
+                <div class="form--el-cont">
+                    <div class="form--label-cont">
+                        <label class="label">First Day</label>
+                    </div>
+                    <div class="form--inp-cont">
+                        <div class="form--select">
+                            <div class="form--select-header">
+                                <span class="select--current" id="First Day">Monday</span>
+                                <span class="form--select-icon"><img src="images/arrow.svg" alt=""/></span>
+                            </div>
+                            <div class="form--select-body">
+                                <div class="select--item">Monday</div>
+                                <div class="select--item">Sunday</div>
+                                <div class="select--item">System</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form--el-cont">
+                    <div class="form--label-cont">
+                        <label class="label">Container Width</label>
+                    </div>
+                    <div class="form--inp-cont">
+                        <div class="form--select">
+                            <div class="form--select-header">
+                                <span class="select--current" id="Container Width">Fixed</span>
+                                <span class="form--select-icon"><img src="images/arrow.svg" alt=""/></span>
+                            </div>
+                            <div class="form--select-body">
+                                <div class="select--item">Fixed</div>
+                                <div class="select--item">Auto</div>
+                                <div class="select--item">Max-content</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form--el-cont">
+                    <div class="form--label-cont">
+                        <label class="label">Homepage</label>
+                    </div>
+                    <div class="form--inp-cont">
+                        <div class="form--select">
+                            <div class="form--select-header">
+                                <span class="select--current" id="Homepage">Projects</span>
+                                <span class="form--select-icon"><img src="images/arrow.svg" alt=""/></span>
+                            </div>
+                            <div class="form--select-body">
+                                <div class="select--item">Starred Projects</div>
+                                <div class="select--item">About us</div>
+                                <div class="select--item">Contacts</div>
+                                <div class="select--item">Blog</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form--el-cont">
+                    <div class="form--label-cont">
+                        <label class="label">Indent Size</label>
+                    </div>
+                    <div class="form--inp-cont">
+                        <input type="text" name="Indent Size" class="inp-text" placeholder="Default" value=""/>
+                    </div>
+                </div>
+                <div class="form--el-cont">
+                    <div class="form--label-cont">
+                        <label class="label">Personal Code</label>
+                    </div>
+                    <div class="form--inp-cont">
+                        <input type="number" name="codeFirst" class="inp-text inp-text-small" placeholder="1645"
+                               maxlength="4"/>
+                        <span class="form--inp-separator"> - </span>
+                        <input type="number" name="codeSecond" class="inp-text inp-text-small" placeholder="1566"
+                               maxlength="4"/>
+                        <span class="form--inp-separator"> - </span>
+                        <input type="number" name="codeThird" class="inp-text inp-text-small" placeholder="1249"
+                               maxlength="4" />
+                        <div class="notice">12 digits</div>
+                    </div>
+                </div>
+                <div class="form--el-cont">
+                    <div class="form--label-cont">
+                        <label class="label">Theme</label>
+                    </div>
+                    <div class="form--inp-cont">
+                        <div class="radio radio-themes">
+                            <label><input type="radio" name="theme" value="light" checked/><span>Light</span></label>
+                            <label><input type="radio" name="theme" value="dark"/><span>Dark</span></label>
+                        </div>
+                    </div>
+                </div>
+                <button class="form--button form--button-apply">Apply and save</button>
+                <button class="form--button form--button-reset">Cancel</button>
+            </div>
+        </form>
+
+    </main>
+    <footer class="footer">
+        <div class="footer--copyright">2020-2022 <a href="#">Terms of Service</a> and <a href="#">Conditions</a></div>
+    </footer>
+</div>
+<script src="./js/scripts.js" type="text/javascript"/></script>
+</body>
+</html>
